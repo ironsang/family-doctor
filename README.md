@@ -6,7 +6,7 @@
 
 #### 程序效果截图
 
-![输入图片说明](assetsgh_cc7fc2538239_344.jpeg)
+![输入图片说明](assets/assetsgh_cc7fc2538239_344.jpeg)
 
 
 #### 安装教程
