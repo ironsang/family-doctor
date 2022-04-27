@@ -1,0 +1,38 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  width: 100%;
+  font-family: Source Han Sans CN;
+}
+
+image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  background: -webkit-linear-gradient(top,rgb(196, 91, 225),rgb(78, 182, 219));
+  position: absolute;
+  z-index: 1;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  color: #f8f5f5;
+  display: flex;
+}
+.user-notice {
+  background-color: transparent;
+  color:rgb(205, 225, 91);
+  height: 70rpx;
+  font-size: 30rpx;
+  vertical-align:middle;		
+  text-align: center;	
+  line-height: 50rpx;
+}
+.user-notice::after{
+  border-color: transparent;
+}

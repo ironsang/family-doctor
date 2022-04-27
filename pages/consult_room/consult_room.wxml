@@ -1,0 +1,36 @@
+<!--privateChat.wxml-->
+<!-- <page-meta>
+	<navigation-bar title="{{friend.name}}" front-color="#FFFFFF" background-color="#D02129" />
+</page-meta> -->
+<view class="chat">
+	<view class="chat-box">
+		<view class="scroll-view">
+			<view class="header">
+				<text>{{welcomeMessage}}</text>
+			</view>
+			<!--已经收到的消息-->
+			<view wx:for="{{messages || []}}" wx:for-index="index" wx:key="index" wx:for-item="message">
+				<!--时间显示，类似于微信，隔5分钟不发言，才显示时间-->
+				<view class="time-lag">
+					{{message.showTime}}
+				</view>
+				<!--消息内容-->
+				<view class="{{message.senderId == currentRoom.currentUser.id ? 'message-item self' : 'message-item'}}">
+					<view class="avatar other-icon" wx:if="{{message.senderId !== currentRoom.currentUser.id}}">
+						<image class="avatar" src="{{doctorAvatar}}" />
+					</view>
+					<view class="avatar self-icon" wx:else>
+						<image class="avatar" src="{{currentRoom.currentUser.avatar}}" />
+					</view>
+					<view class="content">
+						<rich-text class="text-content text-content-bg{{content_bg}}" nodes="{{inquiryDB[message.node]}}" wx:if="{{message.type ==='text'}}"></rich-text>
+						<view class="custom-message" wx:if="{{message.type === 'choose'}}">
+							<view class="btn-choose-yes {{message.selected == 1?'btn-yes-selected':''}}" bindtap="onChoose" data-node="{{message.node}}" data-choose="1">是</view>
+							<view class="btn-choose-no {{message.selected == 0?'btn-no-selected':''}}" bindtap="onChoose" data-node="{{message.node}}" data-choose="0">否</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <image src='../../static/images/bg.png'></image>
+  <ec-canvas id="mychart-dom-scatter" canvas-id="mychart-scatter" ec="{{ ec }}"></ec-canvas>
+
+  <view class="footer"><view>@千木一枝</view><button class="user-notice" catchtap="showUserNotice">《用户须知》</button></view>
+</view>

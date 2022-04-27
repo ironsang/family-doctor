@@ -1,0 +1,161 @@
+/* privateChat.wxss */
+page {
+	height: 100%;
+}
+.chat {
+	height: 100%;
+}
+
+.scroll-view {
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	padding-bottom: 130rpx;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height:50rpx;
+	font-size: 24rpx;
+	color: gray !important;
+	text-decoration: none !important;
+}
+
+.time-lag{
+	font-size: 20rpx;
+	text-align: center;
+}
+
+.message-item {
+	max-height: 1000rpx;
+	padding: 20rpx 0;
+	overflow: hidden;
+	display: flex;
+}
+
+.self{
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+}
+
+.avatar{
+	width: 80rpx;
+	height: 80rpx;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.other-icon {
+	margin: 0 20rpx;
+}
+
+.self-icon {
+	margin: 0 20rpx;
+}
+
+.content{
+	font-size: 34rpx;
+	line-height: 44rpx;
+	max-height: 1000rpx;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	text-align: right;
+}
+
+.pending {
+	width: 30rpx;
+	height: 30rpx;
+	padding: 10rpx;
+}
+
+.text-content{
+	padding: 16rpx;
+	margin-right: 100rpx;
+	border-radius: 12rpx;
+	color: #ffffff;
+	background:#D02129;
+	word-break: break-all;
+	text-align: left;
+	vertical-align: center;
+	display: block;
+}
+.text-content-bg1{
+	background:#4EB6DB;
+}
+.text-content-bg2{
+	background:#C45BE1;
+	color: rgb(231, 226, 226);
+}
+.text-content-bg3{
+	background:#FDD000;
+	color: black;
+}
+.custom-message{
+	width: 300rpx;
+	height: 75rpx;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 10rpx 10rpx;
+	border-radius: 20rpx;
+}
+.btn-choose-yes{
+	width: 45%;
+	height: 45rpx;
+	padding-top: 5rpx;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-color: rgb(52, 124, 3);
+  color: rgb(52, 124, 3);
+  border-radius: 50rpx;
+}
+
+.btn-choose-no{
+	width: 45%;
+	height: 45rpx;
+	padding-top: 5rpx;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-color: #D02129;
+  color: #D02129;
+  border-radius: 50rpx;
+}
+
+.btn-yes-selected{
+	color: white;
+	background-color: rgb(52, 124, 3);
+}
+.btn-no-selected{
+ color: white;
+ background-color: #D02129;
+}
+
+.title{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 30rpx;
+}
+
+.title text {
+	padding: 10rpx;
+}
+
+.text {
+	font-size: 20rpx;
+	text-align: center;
+	line-height: 50rpx;
+	color: #666666;
+}
+
+.title image {
+	width: 40rpx;
+	height: 40rpx;
+}
