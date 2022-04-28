@@ -15,7 +15,7 @@
 ![输入图片说明](assets/gh_cc7fc2538239_344.jpeg)
 
 已经发布微信小程序的效果：
-![输入图片说明](assets/WechatIMG197.jpeg)
+![输入图片说明](assets/a300.png)
 
 #### 问题数据库设计
 
